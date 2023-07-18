@@ -772,7 +772,7 @@ dependencies = [
  "clap",
  "criterion-plot",
  "is-terminal",
- "itertools",
+ "itertools 0.10.5",
  "num-traits",
  "once_cell",
  "oorandom",
@@ -793,7 +793,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6b50826342786a51a89e2da3a28f1c32b06e387201bc2d19791f622c673706b1"
 dependencies = [
  "cast",
- "itertools",
+ "itertools 0.10.5",
 ]
 
 [[package]]
@@ -1915,6 +1915,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "itertools"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b1c173a5686ce8bfa551b3563d0c2170bf24ca44da99c7ca4bfdab5418c3fe57"
+dependencies = [
+ "either",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2679,7 +2688,7 @@ name = "nu-cmd-lang"
 version = "0.82.1"
 dependencies = [
  "fancy-regex",
- "itertools",
+ "itertools 0.11.0",
  "nu-ansi-term 0.47.0",
  "nu-engine",
  "nu-parser",
@@ -2730,7 +2739,7 @@ dependencies = [
  "indexmap 2.0.0",
  "indicatif",
  "is-terminal",
- "itertools",
+ "itertools 0.11.0",
  "libc",
  "log",
  "lscolors",
@@ -2854,7 +2863,7 @@ version = "0.82.1"
 dependencies = [
  "bytesize",
  "chrono",
- "itertools",
+ "itertools 0.11.0",
  "log",
  "nu-engine",
  "nu-path",
@@ -3927,7 +3936,7 @@ checksum = "09963355b9f467184c04017ced4a2ba2d75cbcb4e7462690d388233253d4b1a9"
 dependencies = [
  "anstyle",
  "difflib",
- "itertools",
+ "itertools 0.10.5",
  "predicates-core",
 ]
 
@@ -4206,7 +4215,7 @@ dependencies = [
  "chrono",
  "crossterm",
  "fd-lock",
- "itertools",
+ "itertools 0.10.5",
  "nu-ansi-term 0.47.0",
  "rusqlite",
  "serde",
@@ -5698,7 +5707,7 @@ checksum = "06c7a3bac6110ac062b7b422a442b7ee23e07209e2784a036654cab1e71bbafc"
 dependencies = [
  "bstr 0.2.17",
  "const_format",
- "itertools",
+ "itertools 0.10.5",
  "nom",
  "nom-supreme",
  "pori",
