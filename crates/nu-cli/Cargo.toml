@@ -25,7 +25,9 @@ nu-protocol = { path = "../nu-protocol", version = "0.82.0" }
 nu-utils = { path = "../nu-utils", version = "0.82.0" }
 nu-color-config = { path = "../nu-color-config", version = "0.82.0" }
 nu-ansi-term = "0.47.0"
-reedline = { version = "0.21.0", features = ["bashisms", "sqlite"]}
+# reedline = { version = "0.21.0", features = ["bashisms", "sqlite"]}
+reedline = { git = "https://github.com/Abdillah/reedline.git", rev = "0cb40c618ce1c4b41a48fc757e421d9bc8f9ba19", features = ["bashisms", "sqlite"] }
+# reedline = { path = "../../../reedline", features = ["bashisms", "sqlite"] }
 
 atty = "0.2"
 chrono = { default-features = false, features = ["std"], version = "0.4" }
