@@ -108,6 +108,7 @@ pub struct Config {
     pub cursor_shape_emacs: NuCursorShape,
     pub datetime_normal_format: Option<String>,
     pub datetime_table_format: Option<String>,
+    pub use_kitty_protocol: bool,
 }
 
 impl Default for Config {
@@ -154,6 +155,7 @@ impl Default for Config {
             cursor_shape_emacs: NuCursorShape::Line,
             datetime_normal_format: None,
             datetime_table_format: None,
+            use_kitty_protocol: false,
         }
     }
 }
@@ -1100,6 +1102,9 @@ impl Value {
                     }
                     "bracketed_paste" => {
                         try_bool!(cols, vals, index, span, bracketed_paste);
+                    }
+                    "use_kitty_protocol" => {
+                        try_bool!(cols, vals, index, span, use_kitty_protocol);
                     }
                     // Menus
                     "menus" => match create_menus(value) {
